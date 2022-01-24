@@ -31,12 +31,12 @@ class RespeakerMicArrayTwoLeds(MycroftSkill):
         self.add_event('mycroft.mic.unmute',
                         self.handler_mycroft_mic_unmute)
 
-        self.add_event('mycroft.volume.increase',
-                        self.handler_mycroft_volume_changed)
-        self.add_event('mycroft.volume.decrease',
-                        self.handler_mycroft_volume_changed)
-        self.add_event('mycroft.volume.get.response',
-                        self.handler_mycroft_volume_get_response)
+        # self.add_event('mycroft.volume.increase',
+        #                 self.handler_mycroft_volume_changed)
+        # self.add_event('mycroft.volume.decrease',
+        #                 self.handler_mycroft_volume_changed)
+        # self.add_event('mycroft.volume.get.response',
+        #                 self.handler_mycroft_volume_get_response)
 
 
 
@@ -111,26 +111,26 @@ class RespeakerMicArrayTwoLeds(MycroftSkill):
             self.usb_error_notify(e)
 
 
-    def handler_mycroft_volume_changed(self, message):
-        # request volume
-        self.log.info("Volume changed, requesting volume.")
-        self.bus.emit(Message('mycroft.volume.get'))
+    # def handler_mycroft_volume_changed(self, message):
+    #     # request volume
+    #     self.log.info("Volume changed, requesting volume.")
+    #     self.bus.emit(Message('mycroft.volume.get'))
     
-    def handler_mycroft_volume_get_response(self, message):
-        # show current percentage as leds
-        self.log.info("Setting pixel ring to show current volume.")
-        self.shows_volume = True
-        volume = ceil(message.percent * 12)
-        try:
-            pixel_ring.show_volume(volume)
-            sleep(2)
-            if message.muted:
-                pixel_ring.mono(0xe70e02)
-            else:
-                pixel_ring.off()
-        except USBError as e:
-            self.usb_error_notify(e)
-        self.shows_volume = False
+    # def handler_mycroft_volume_get_response(self, message):
+    #     # show current percentage as leds
+    #     self.log.info("Setting pixel ring to show current volume.")
+    #     self.shows_volume = True
+    #     volume = ceil(message.percent * 12)
+    #     try:
+    #         pixel_ring.show_volume(volume)
+    #         sleep(2)
+    #         if message.muted:
+    #             pixel_ring.mono(0xe70e02)
+    #         else:
+    #             pixel_ring.off()
+    #     except USBError as e:
+    #         self.usb_error_notify(e)
+    #     self.shows_volume = False
 
 
     def usb_error_notify(self, e):
