@@ -1,5 +1,5 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/lightbulb.svg" card_color="#FD9E66" width="50" height="50" style="vertical-align:bottom"/> Respeaker Mic Array v2.0 LEDs
-Syncs Respeaker Mic Array v2.0 LEDs to Mycroft's behavior.
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/lightbulb.svg" card_color="#FD9E66" width="50" height="50" style="vertical-align:bottom"/> Respeaker Array v2 LEDs
+Syncs Respeaker Mic Array v2.0 LEDs to Mycroft.
 
 ## About
 Matches the lighting of the LEDs to Mycroft's behavior.
