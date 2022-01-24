@@ -1,0 +1,2 @@
+# Grant the non-root user read and write permission for the Respeaker Mic Array v2.0 (aka. Respeaker USB 4 Mic Array)
+SUBSYSTEM=="usb", ATTR{idVendor}=="2886", ATTR{idProduct}=="0018", MODE="666"

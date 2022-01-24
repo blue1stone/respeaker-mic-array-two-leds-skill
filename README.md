@@ -1,12 +1,10 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/lightbulb.svg" card_color="#FD9E66" width="50" height="50" style="vertical-align:bottom"/> Respeaker Mic Array Two Leds
-Syncs respeaker mic array v2.0 leds to mycroft's sound output
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/lightbulb.svg" card_color="#FD9E66" width="50" height="50" style="vertical-align:bottom"/> Respeaker Mic Array v2.0 LEDs
+Syncs Respeaker Mic Array v2.0 LEDs to Mycroft's behavior.
 
 ## About
-Todo: enter long description
+Matches the lighting of the LEDs to Mycroft's behavior.
 
-## Examples
-* "Turn off leds"
-* "Turn on leds"
+LEDs are turned off by default and will turn once the wake word is spoken. They trace the direction of the user during input and will show a pulse animation when Mycroft answers.
 
 ## Credits
 Elias Ball
@@ -15,8 +13,9 @@ Elias Ball
 **Configuration**
 
 ## Tags
-#Led
+#LED
 #Respeaker
-#Respeaker mic array v2.0
-#Leds
+#Respeaker Mic Array v2.0
+#Respeaker USB 4 Mic Array
+#LEDs
 
